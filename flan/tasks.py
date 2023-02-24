@@ -713,7 +713,7 @@ def _process_xsum(example):
 
 
 TASK_CONFIGS['xsum'] = _TaskConfig(
-    source=seqio.TfdsDataSource(tfds_name='xsum:1.0.0', splits=SPLITS_DICT),
+    source=seqio.TfdsDataSource(tfds_name='xsum:1.1.0', splits=SPLITS_DICT),
     preprocessors=[
         _process_xsum,
     ],
